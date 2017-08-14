@@ -1,20 +1,4 @@
-<html>
-  <head>
-    <meta charset='UTF-8'>
-    <title> Bird Features - Home </title>
-    <link href='css/main.css' type='text/css' rel='stylesheet'/>
-  </head>
-</html>
-<body>
-  <header>
-    <img class='logo' src= 'images/logo.png'>
-    <div class='activities'>
-      <a class='nav-button' href='#'> Home </a>
-      <a class='nav-button' href='#'> Notebook </a>
-      <a class='nav-button' href='#'> Quiz </a>
-      <a class='nav-button' href='#'> Learn </a>
-    </div>
-  </header>
+<?php include('includes/header.php') ?>
   <main>
     <map name='splash'>
       <area title='bee-eater' shape='rect' coords='265, 350, 344 ,411' href='#'>
@@ -28,6 +12,27 @@
       <area title='firecrest' shape='rect' coords='562, 427, 683 ,497' href='#'>
     </map>
     <img class='splash' src='images/splash.png' usemap='splash'>
+
+    <div class='book'>
+      <div class='pic-page'>
+        <div class='bird-info'>
+          <img class='pic' src='images/dartford.png'>
+          <div class='details'>
+            <div class='titles'>
+              <p> Name: </p>
+              <p> Location: </p>
+            </div>
+            <div class='descriptions'>
+              <p> Dartford </p>
+              <p> Australia </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='notes-page'>
+        <textarea class='notebook' cols='28' rows='25'></textarea>
+      </div>
+    </div>
   </main>
   <footer>
 
