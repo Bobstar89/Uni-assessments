@@ -4,6 +4,9 @@
 
 body {
   margin: 0;
+  height: 100%;
+  min-height: 100%;
+  background-color: #eaf9ff;
 }
 
 header, main, footer {
@@ -18,7 +21,6 @@ header, main, footer {
 }
 
 main{
-  background-color: #eaf9ff;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -160,26 +162,117 @@ area:hover{
   margin-right: 50px;
 }
 
-.answer span{
+.answer label{
   margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: arial;
 }
 
-input[type='radio'] {
+.answer input[type='radio'] {
+  -webkit-appearance: none;
   margin-top: 10px;
   margin-left: 50px;
   margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  background: #FFF;
+  vertical-align: middle;
+  padding: 0 2px;
+}
+.answer input[type='radio']:checked:before
+{
+  content: '✔';
+  font-size: 14px;
+  display: inline-block;
 }
 
-.quiz .nav {
-  display: inline-block;
-  padding: 15px 0;
-  margin-left: 100px;
-  display: block;
+.quiz .content:after, .quiz .score:after{
+  display: table;
+  content: "";
   clear: both;
 }
 
+.quiz .nav {
+
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 110px;
+  display: block;
+}
+
+.quiz .score .current, .best {
+  font-family: arial;
+  text-align: center;
+  font-weight: bold;
+}
+
+.current{
+  float: left;
+  margin-left: 100px;
+}
+
+.best{
+  float: right;
+  margin-right: 100px;
+}
+
 .quiz .buttons {
-  margin: 0 15px;
+  margin: 0 30px;
+  background-color: #5494FA;
+  border-left: 8px solid #7FA7E8;
+  border-top: 8px solid #92B3E8;
+  border-bottom: 8px solid #5782C6;
+  border-right: 8px solid #80A4DD;
+  border-radius: 5px;
+
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.content .subjects {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+.subjects a:first-child{
+  margin-top: 70px;
+}
+
+.subjects a {
+  display: block;
+  background-color: #5494FA;
+  border-left: 8px solid #7FA7E8;
+  border-top: 8px solid #92B3E8;
+  border-bottom: 8px solid #5782C6;
+  border-right: 8px solid #80A4DD;
+  border-radius: 10px;
+
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin: 12px;
+}
+
+
+.content .information {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+  margin-top: 70px;
+}
+
+footer{
+  display: block;
+  float: bottom;
 }
 
 @media screen and (min-width: 1050px)
