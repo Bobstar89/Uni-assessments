@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+  background-color: #eaf9ff;
+}
+
+header, main, footer {
+  width: 100%;
+  margin: auto;
+  /* background-color: blue; */
+}
+
+.logo{
+  width: 100%;
+  height: 80px;
+}
+
+#splash-feature{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.splash {
+  width: 800px;
+  height: 600px;
+  display: block;
+  margin: auto;
+  border: 5px groove #8c5e15;
+}
+
+.book{
+  width: 80%;
+  height: 550px;
+  border-left: 10px inset #7a4f0b;
+  border-top: 10px solid #7a4f0b;
+  border-bottom: 10px solid #7a4f0b;
+  border-right: 10px outset #7a4f0b;
+}
+
+.pic-page{
+  padding-top: 24px;
+  background-color: #fcf2a9;
+  border-right: 10px solid #d8ce7f;
+
+  display: block;
+  float: left;
+
+  width: 50%;
+  height: 100%;
+  margin-top: 0;
+}
+
+.notes-page
+{
+  background-color: #fcf2a9;
+  border-left: 10px solid #ede084;
+  display: block;
+  float: right;
+
+  width: 50%;
+  height: 100%;
+}
+
+.bird-info{
+  float: left;
+  right: 0px;
+}
+
+.notebook{
+  margin-top: 35px;
+  margin-right: 20px;
+  background: url('../images/notebook lines.png') repeat-y;
+  border: 0;
+  height: 460px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 32px;
+  padding-left: 25px;
+  padding-right: 0;
+  resize: none;
+}
+
+.notebook:focus
+{
+  outline-color: #d6c053;
+}
+
+.titles{
+  float: left;
+  padding-left: 15%;
+  font-weight: bold;
+}
+
+.descriptions {
+  float: right;
+  padding-right: 15%;
+}
+
+.bird-info .pic{
+  background-color: white;
+  border: 5px groove #db4c36;
+  width: 300px;
+  height: 300px;
+  margin-left: 41px;
+  padding-left: 20px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-bottom: 10px;
+}
+
+.bird-info .details{
+  width: 60%;
+  margin: auto;
+  margin-left: 90px;
+  height: 100px;
+  background-color: #d8d5cb;
+  border: 5px outset #aaa9a5;
+}
+area:hover{
+  cursor: pointer;
+}
+.nav-button{
+  background-color: #5494FA;
+  border-left: 4px solid #7FA7E8;
+  border-top: 4px solid #92B3E8;
+  border-bottom: 4px solid #5782C6;
+  border-right: 4px solid #80A4DD;
+
+  padding: 5px 9%;
+  text-decoration: none;
+  font-size: 20;
+  color: white;
+  font-weight: bold;
+  font-family: arial;
+}
+
+.quiz {
+  width: 50%;
+  margin: auto;
+  background-color: #f9dd90;
+  border: 10px groove #d8aa5b;
+}
+.quiz .question {
+  text-align: center;
+  font-size: 26px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.quiz .answers {
+  float: left;
+}
+
+.quiz .image {
+  float: right;
+  margin-right: 50px;
+}
+
+.answer label{
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: arial;
+}
+
+.answer input[type='radio'] {
+  -webkit-appearance: none;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  background: #FFF;
+  vertical-align: middle;
+  padding: 0 2px;
+}
+.answer input[type='radio']:checked:before
+{
+  content: '✔';
+  font-size: 14px;
+  display: inline-block;
+}
+
+.quiz .content:after, .quiz .score:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.quiz .nav {
+
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: 110px;
+  display: block;
+}
+
+.quiz .score .current, .best {
+  font-family: arial;
+  text-align: center;
+  font-weight: bold;
+}
+
+.current{
+  float: left;
+  margin-left: 100px;
+}
+
+.best{
+  float: right;
+  margin-right: 100px;
+}
+
+.quiz .buttons {
+  margin: 0 30px;
+  background-color: #5494FA;
+  border-left: 8px solid #7FA7E8;
+  border-top: 8px solid #92B3E8;
+  border-bottom: 8px solid #5782C6;
+  border-right: 8px solid #80A4DD;
+  border-radius: 5px;
+
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.content .subjects {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+.subjects a:first-child{
+  margin-top: 70px;
+}
+
+.subjects a {
+  display: block;
+  background-color: #5494FA;
+  border-left: 8px solid #7FA7E8;
+  border-top: 8px solid #92B3E8;
+  border-bottom: 8px solid #5782C6;
+  border-right: 8px solid #80A4DD;
+  border-radius: 10px;
+
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin: 12px;
+}
+
+
+.content .information {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+  margin-top: 70px;
+}
+
+footer{
+  display: block;
+  float: bottom;
+}
+
+@media screen and (min-width: 1050px)
+{
+  header, main, footer{
+    width: 80%;
+  }
+}
