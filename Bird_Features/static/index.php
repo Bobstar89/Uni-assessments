@@ -1,4 +1,4 @@
-<?php include('../includes/header.php') ?>
+<?php include('../static/includes/header.php') ?>
   <main>
     <map name='splash'>
       <area title='bee-eater' shape='rect' coords='265, 350, 344 ,411' href='#'>
@@ -34,4 +34,4 @@
       </div>
     </div>
   </main>
-<?php include('../includes/footer.php') ?>
+<?php include('../static/includes/footer.php') ?>

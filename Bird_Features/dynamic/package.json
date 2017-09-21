@@ -2,29 +2,30 @@
   "name": "bird_features",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "webpack-config.js",
   "scripts": {
-    "dev" : "../node_modules/.bin/webpack-dev-server --content-base src --inline",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-transform-class-properties": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-script": "^2.0.5",
+    "react-scripts": "^1.0.11",
+    "symbol-tree": "^3.2.2",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.14.1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-react-html-attrs": "^2.0.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "jquery": "^3.2.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "webpack-dev-server": "^2.7.1"
-  },
-  "devDependencies": {
-    "webpack": "^3.5.5"
-  }
+  "license": "ISC"
 }

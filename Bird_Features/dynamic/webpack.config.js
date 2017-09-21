@@ -2,9 +2,10 @@ var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 
 module.exports = {
-  context: __dirname + '/src',
+  context: __dirname,
   devtool: debug ? "inline-sourcemap" : false,
-  entry: "./js/main.js",
+  entry: "./src/index.js",
+  watch: true,
   module: {
     loaders: [
       {
@@ -19,8 +20,8 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + "/src/bundle",
-    filename: "main.min.js"
+    path: __dirname + "/bundle",
+    filename: "scripts.min.js"
   },
   plugins: debug ? [] : [
     new webpack.optimize.OccurrenceOrderPlugin(),
@@ -36,6 +37,5 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 };

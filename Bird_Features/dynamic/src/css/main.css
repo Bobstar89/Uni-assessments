@@ -20,7 +20,7 @@ header, main, footer {
   height: 80px;
 }
 
-#splash-feature{
+main{
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -241,7 +241,7 @@ area:hover{
 }
 
 .subjects a:first-child{
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .subjects a {
@@ -265,9 +265,40 @@ area:hover{
 
 .content .information {
   display: inline-block;
-  width: 65%;
+  width: 50%;
+  margin-left: 80px;
   vertical-align: top;
-  margin-top: 70px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.content .information p{
+  height: 300px;
+}
+
+.content .navigation {
+  text-align: center;
+}
+
+.content .navigation a {
+  color: #fff;
+  font-family: arial;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  margin: 12px;
+
+  background-color: #5494FA;
+  border-left: 8px solid #7FA7E8;
+  border-top: 8px solid #92B3E8;
+  border-bottom: 8px solid #5782C6;
+  border-right: 8px solid #80A4DD;
+  border-radius: 10px;
+}
+
+.content .navigation a:last-child {
+  margin: 12px 60px;
+  padding: 10px;
 }
 
 footer{

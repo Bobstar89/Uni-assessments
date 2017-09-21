@@ -1,4 +1,4 @@
-<?php include('../includes/header.php') ?>
+<?php include('./includes/header.php') ?>
   <main>
     <div class='quiz'>
       <div class='content'>
@@ -31,4 +31,4 @@
       </div>
     </div>
   </main>
-<?php include('../includes/footer.php') ?>
+<?php include('includes/footer.php') ?>
